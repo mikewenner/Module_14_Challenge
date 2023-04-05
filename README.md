@@ -22,7 +22,7 @@
 ### Tune the Baseline (Adjust SMA periods)
 * For this adjustment we changed both the short SMA (from 4 to 2) and long SMA (from 100 to 50) windows and reran the initial model/experiment (baseline) to see what changed wrt to the cumulative performance.
 * What impact resulted from increasing or decreasing either or both of the SMA windows?
-    - In this case, changing the windows to shorter periods adversly impacted the overall performance of the strategy as it did not performa better than actual returns of the underlying instrument (Actual Returns). 
+    - In this case, changing the windows to shorter periods adversly impacted the overall performance of the strategy as it did not perform better than actual returns of the underlying instrument (Actual Returns). 
     - Furthermore, it performed worse than using a 4 and 100 period SMA as signal. In this case (using 2 & 50 period SMA's) the final cumulative return for the period was ~1.2 or 20% increase vs when we used a 4 and 100 period SMA signal we saw final cumulative returns of slightly better than 1.5X or 50%. See plot sma_change in images folder.
 
 ### Choose the set of parameters that best improved the trading algorithm returns
@@ -34,3 +34,4 @@
 * Did this new model perform better or worse than the provided baseline model? Did this new model perform better or worse than your tuned trading algorithm?
     - As compared to the baseline model the stochastic gradient descent model (SGDC) performed worse at aproximately 1.35X then the original baseline SVM model at approximately 1.55X when looking at cumulative returns.
     - This model (SGDC) also performed worse than the best tuned model as well. (1.35X vs 1.7X)
+    - Refer to sgdc png file in images folder
